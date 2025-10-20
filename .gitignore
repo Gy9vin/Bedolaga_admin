@@ -1,0 +1,44 @@
+# Global
+.DS_Store
+.env
+.vscode/
+.idea/
+*.log
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+*.pyo
+.python-version
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# FastAPI builds
+backend/.env
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.vite/
+frontend/.turbo/
+
+# Docker
+*.pid
+*.pid.lock
+
+# Coverage / reports
+coverage/
+htmlcov/
+.coverage*
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+
+# Tooling
+*.tsbuildinfo
+.npm/
+
