@@ -5,7 +5,8 @@
 ## Статус
 
 - Текущий прогресс отражается в `WEB_ADMIN_IMPLEMENTATION_PLAN.md`.
-- Подготовлен каркас backend (FastAPI) с health/statistics прокси, авторизацией по JWT и audit-логированием.
+- Готов backend-каркас (FastAPI) с health/statistics прокси, авторизацией по JWT и audit-логированием.
+- Инициализирован frontend (Vite + React + TypeScript + Material UI + React Query) с базовым layout и дашбордом статистики.
 
 ## Структура репозитория
 
@@ -37,4 +38,14 @@
    - Backend доступен на `http://localhost:8080`
    - Frontend доступен на `http://localhost:3000`
 
-> Примечание: текущие шаблоны не содержат исходного кода приложения. Реализация backend/frontend будет добавлена на следующих этапах.
+> Примечание: backend и frontend содержат каркасные реализации. Функционал будет расширяться по мере прохождения последующих этапов плана.
+
+## Frontend локально
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+По умолчанию dev-сервер работает на `http://localhost:5173` и проксирует API-запросы на `VITE_API_BASE_URL` (по умолчанию `/api`).
