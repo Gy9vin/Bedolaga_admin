@@ -5,7 +5,7 @@
 ## Статус
 
 - Текущий прогресс отражается в `WEB_ADMIN_IMPLEMENTATION_PLAN.md`.
-- На данный момент ведется подготовка инфраструктуры репозитория.
+- Подготовлен каркас backend (FastAPI) с health/statistics прокси, авторизацией по JWT и audit-логированием.
 
 ## Структура репозитория
 
@@ -28,6 +28,7 @@
    cp .env.example .env
    cp frontend/.env.example frontend/.env
    ```
+   Обновите токены: `REMNAWAVE_API_TOKEN` для доступа к исходному API и `ADMIN_JWT_SECRET` для выпуска JWT.
 2. Соберите и поднимите сервисы:
    ```bash
    docker compose -f infra/docker-compose.yml up --build
