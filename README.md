@@ -6,7 +6,7 @@
 
 - Текущий прогресс отражается в `WEB_ADMIN_IMPLEMENTATION_PLAN.md`.
 - Готов backend-каркас (FastAPI) с health/statistics прокси, авторизацией по JWT и audit-логированием.
-- Инициализирован frontend (Vite + React + TypeScript + Material UI + React Query) с базовым layout и дашбордом статистики.
+- Инициализирован frontend (Vite + React + TypeScript + Material UI + React Query) с базовым layout, дашбордом статистики, виджетом мониторинга `/health`, разделами управления пользователями, подписками и токенами.
 
 ## Структура репозитория
 
